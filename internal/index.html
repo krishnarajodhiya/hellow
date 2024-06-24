@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.search-bar {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-icon {
+  margin-left: 10px;
+  color: #ccc;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  margin-left: 20px;
+  color: #333;
+}
+
+.menu-item:hover {
+  text-decoration: underline;
+}
+
+.popular-now {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.popular-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: 200px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.product-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  color: #666;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  padding: 10px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination-button:hover {
+  background-color: #ddd;
+}
+
+.collection-section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.collection-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.collections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.collection {
+  width: 250px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.collection-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.collection-button:hover {
+  background-color: #ddd;
+}
+
+.deals-section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.deals-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.deals-form {
+  display: flex;
+  align-items: center;
+}
+
+.deals-input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.deals-button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.deals-button:hover {
+  background-color: #666;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  margin: 0 10px;
+  color: #fff;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  color: #ddd;
+}
+
+.contact-info {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+/* same CSS code as before */
+
+/* Add media queries for mobile phones */
+@media only screen and (max-width: 768px) {
+  /* Header and navigation */
+  header {
+    padding: 10px;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    font-size: 18px;
+  }
+  .search-bar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .menu-items {
+    flex-direction: column;
+  }
+  .menu-item {
+    margin-bottom: 10px;
+  }
+
+  /* Popular products */
+  .popular-now {
+    padding: 10px;
+  }
+  .popular-products {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .product {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .product-image {
+    width: 50%;
+    height: 50%;
+  }
+
+  /* Collection section */
+  .collection-section {
+    padding: 10px;
+  }
+  .collections {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .collection {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Deals section */
+  .deals-section {
+    padding: 10px;
+  }
+  .deals-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .deals-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 10px;
+  }
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-link {
+    margin-bottom: 10px;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+  .social-icon {
+    margin-bottom: 10px;
+  }
+  .contact-info {
+    font-size: 14px;
+  }
+}
+
+/* Add more media queries for smaller screen sizes if needed */
+@media only screen and (max-width: 480px) {
+  /* even more adjustments for smaller screens */
+}
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">My Shop</div>
+    <input type="text" class="search-bar" placeholder="Search">
+    <i class="search-icon fas fa-search"></i>
+    <div class="menu-items">
+      <div class="menu-item">Home</div>
+      <div class="menu-item">Products</div>
+      <div class="menu-item">About</div>
+      <div class="menu-item">Contact</div>
+    </div>
+  </nav>
+</header>
+
+<section class="popular-now">
+  <h2>Popular Now</h2>
+  <div class="popular-products">
+    <div class="product">
+      <img src="https://via.placeholder.com/100x100" alt="Product Image" class="product-image">
+      <h3 class="product-title">Product Title</h3>
+      <p class="product-price">$10.00</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/100x100" alt="Product Image" class="product-image">
+      <h3 class="product-title">Product Title</h3>
+      <p class="product-price">$15.00</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/100x100" alt="Product Image" class="product-image">
+      <h3 class="product-title">Product Title</h3>
+      <p class="product-price">$20.00</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/100x100" alt="Product Image" class="product-image">
+      <h3 class="product-title">Product Title</h3>
+      <p class="product-price">$25.00</p>
+    </div>
+  </div>
+  <div class="pagination">
+    <button class="pagination-button">Previous</button>
+    <button class="pagination-button">1</button>
+    <button class="pagination-button">2</button>
+    <button class="pagination-button">3</button>
+    <button class="pagination-button">Next</button>
+  </div>
+</section>
+
+<section class="collection-section">
+  <h2>Check Out Our Newest Collection</h2>
+  <div class="collections">
+    <div class="collection">
+      <h3>Collection</h3>
+      <p>Summer 2018</p>
+      <button class="collection-button">See More</button>
+    </div>
+    <div class="collection">
+      <h3>Collection</h3>
+      <p>Summer 2018</p>
+      <button class="collection-button">See More</button>
+    </div>
+    <div class="collection">
+      <h3>Collection</h3>
+      <p>Summer 2018</p>
+      <button class="collection-button">See More</button>
+    </div>
+    <div class="collection">
+      <h3>Collection</h3>
+      <p>Summer 2018</p>
+      <button class="collection-button">See More</button>
+    </div>
+  </div>
+</section>
+
+<section class="deals-section">
+  <h2>Get Latest Deals</h2>
+  <div class="deals-form">
+    <input type="email" class="deals-input" placeholder="Email Address">
+    <button class="deals-button">Subscribe</button>
+  </div>
+</section>
+
+<footer>
+  <div class="contact-info">
+    <h3>Contact Us</h3>
+    <p>385 Noah Place Suite 878</p>
+    <p>info@form.com</p>
+    <p>877-255-7945</p>
+  </div>
+  <div class="social-icons">
+    <i class="social-icon fab fa-facebook-f"></i>
+    <i class="social-icon fab fa-twitter"></i>
+    <i class="social-icon fab fa-instagram"></i>
+  </div>
+  <div class="footer-links">
+    <a href="#" class="footer-link">Privacy & Cookies</a>
+    <a href="#" class="footer-link">Terms & Conditions</a>
+    <a href="#" class="footer-link">Accessibility</a>
+  </div>
+  <div class="copyright">
+    Copyright © 2022 Company | All rights reserved
+  </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+</body>
+</html>
