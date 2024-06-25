@@ -2,21 +2,54 @@
 <html>
 <head>
 <style>
+  h2{
+    color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #c62525,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 230, 0),
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #c62525,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 230, 0),
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+  }
     
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+background-image: url(https://c4.wallpaperflare.com/wallpaper/448/174/357/neon-4k-hd-best-for-desktop-wallpaper-preview.jpg);
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 header {
-  background-color: #fff;
+  border-radius: 40px;
   padding: 20px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba (227 ,228,237,0.37);
+  border: 2px solid rgba (227 ,228,237,0.37);
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 30px rgba(227,228,227,0.37);
+  
 }
 
 nav {
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,8 +58,40 @@ nav {
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #c62525,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 230, 0),
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+
+      animation: flicker 1.5s infinite alternate;
 }
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
 
 .search-bar {
   width: 300px;
@@ -37,7 +102,17 @@ nav {
 
 .search-icon {
   margin-left: 10px;
-  color: #ccc;
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #c62525,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 230, 0),
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+  
 }
 
 .menu-items {
@@ -47,18 +122,40 @@ nav {
 
 .menu-item {
   margin-left: 20px;
-  color: #333;
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #c62525,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 230, 0),
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
 }
 
 .menu-item:hover {
+  color: #fff;
+  text-shadow:
+      0 0 7px #05e61c,
+      0 0 10px #f17070,
+      0 0 21px #fff,
+      0 0 42px rgb(0, 200, 255),
+      0 0 82px #0fa,
+      0 0 92px rgb(251, 200, 33),
+      0 0 102px #0fa,
+      0 0 151px #0fa;
   text-decoration: underline;
 }
 
 .popular-now {
-  background-color: #fff;
+  border: 2px solid rgba (227 ,228,237,0.37);
+  border-radius: 40px;
   padding: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba (227 ,228,237,0.37);
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 30px rgba(227,228,227,0.37);
 }
 
 .popular-products {
@@ -72,8 +169,10 @@ nav {
   margin-bottom: 20px;
   text-align: center;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+
+  background-image: url(https://t4.ftcdn.net/jpg/04/61/47/03/240_F_461470323_6TMQSkCCs9XQoTtyer8VCsFypxwRiDGU.jpg);
+  border: 2px solid black;
+  border-radius: 30% 70% 70% 30% / 30% 46% 54% 70% ;
 }
 
 .product-image {
@@ -84,13 +183,35 @@ nav {
 }
 
 .product-title {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #c62525,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 230, 0),
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+  
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .product-price {
-  color: #666;
-}
+  color: #e024a1;
+    text-shadow:
+      0 0 7px #c01b1b,
+      0 0 10px #e41b1b,
+      0 0 21px #fff,
+      0 0 42px #f09,
+      0 0 82px #f09,
+      0 0 92px #f09,
+      0 0 102px #f09,
+      0 0 151px #f09;
+  }
+
+
 
 .pagination {
   display: flex;
@@ -101,7 +222,7 @@ nav {
 .pagination-button {
   padding: 10px;
   margin: 0 5px;
-  border: 1px solid #ddd;
+ 
   border-radius: 5px;
   cursor: pointer;
 }
@@ -111,13 +232,27 @@ nav {
 }
 
 .collection-section {
-  background-color: #fff;
+  border-bottom: 1px solid rgba (227 ,228,237,0.37);
+  border: 2px solid rgba (227 ,228,237,0.37);
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 30px rgba(227,228,227,0.37);
   padding: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ddd;
+  
 }
 
 .collection-title {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #c62525,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 230, 0),
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -134,9 +269,19 @@ nav {
   margin-bottom: 20px;
   padding: 10px;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #333;
+  border-radius: 50% 50% 54% 46% / 44% 50% 50% 56% ;
   color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #c62525,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 230, 0),
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+
+ 
   text-align: center;
 }
 
@@ -144,9 +289,23 @@ nav {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 10px;
-  background-color: #fff;
-  color: #333;
+  background-color: black;
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #c62525,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 230, 0),
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+
   border-radius: 5px;
+  border-bottom: 1px solid rgba (227 ,228,237,0.37);
+  border: 2px solid rgba (227 ,228,237,0.37);
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 30px rgba(227,228,227,0.37);
   cursor: pointer;
 }
 
@@ -155,10 +314,15 @@ nav {
 }
 
 .deals-section {
-  background-color: #fff;
+  border-bottom: 1px solid rgba (227 ,228,237,0.37);
+  border: 2px solid rgba (227 ,228,237,0.37);
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 30px rgba(227,228,227,0.37);
+
   padding: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #ddd;
+  
 }
 
 .deals-title {
@@ -193,9 +357,13 @@ nav {
 }
 
 footer {
-  background-color: #333;
+  border-bottom: 1px solid rgba (227 ,228,237,0.37);
+  border: 2px solid rgba (227 ,228,237,0.37);
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 30px rgba(227,228,227,0.37);
+
   padding: 20px;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -338,41 +506,42 @@ footer {
 </head>
 <body>
 <header>
+   
   <nav>
-    <div class="logo">My Shop</div>
-    <input type="text" class="search-bar" placeholder="Search">
+    <div class="logo">SHOP</div>
+    <input type="text" class="search-bar" placeholder="D H U N D L O">
     <i class="search-icon fas fa-search"></i>
     <div class="menu-items">
       <div class="menu-item">Home</div>
       <div class="menu-item">Products</div>
-      <div class="menu-item">About</div>
-      <div class="menu-item">Contact</div>
+      <div class="menu-item"><a href="https://www.instagram.com/rajatxdua?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">About</a></div>
+      <div class="menu-item"><a href="https://form-beryl-gamma.vercel.app/">Contact</a></div>
     </div>
   </nav>
-</header>
+</header><br>
 
 <section class="popular-now">
-  <h2>Popular Now</h2>
+  <h2>JALDI KARO</h2>
   <div class="popular-products">
     <div class="product">
-      <img src="https://via.placeholder.com/100x100" alt="Product Image" class="product-image">
-      <h3 class="product-title">Product Title</h3>
-      <p class="product-price">$10.00</p>
+      <img src="https://images.news18.com/ibnkhabar/uploads/2022/12/2243541_CON_FEATUREIMG_20221210_122309.jpg" alt="Product Image" class="product-image">
+      <h3 class="product-title">VICTORIA MARKET</h3>
+      <p class="product-price">50,000₹</p>
     </div>
     <div class="product">
-      <img src="https://via.placeholder.com/100x100" alt="Product Image" class="product-image">
-      <h3 class="product-title">Product Title</h3>
-      <p class="product-price">$15.00</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJNjpu_EcPZi1h1HjqlhdMKbVjFHdPb2JsmWMQ4JXVRs7Tk9eqwRJtyH-_75wgk-6j0-c&usqp=CAU" alt="Product Image" class="product-image">
+      <h3 class="product-title">POST OFFICE</h3>
+      <p class="product-price">59,000₹</p>
     </div>
     <div class="product">
-      <img src="https://via.placeholder.com/100x100" alt="Product Image" class="product-image">
-      <h3 class="product-title">Product Title</h3>
-      <p class="product-price">$20.00</p>
+      <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/03/Jai-Vilas-Palace.jpg" alt="Product Image" class="product-image">
+      <h3 class="product-title">SINDIA PALACE</h3>
+      <p class="product-price">59,000₹</p>
     </div>
     <div class="product">
-      <img src="https://via.placeholder.com/100x100" alt="Product Image" class="product-image">
-      <h3 class="product-title">Product Title</h3>
-      <p class="product-price">$25.00</p>
+      <img src="Screenshot 2024-06-25 at 12.31.50 PM.png" alt="Product Image" class="product-image">
+      <h3 class="product-title">RAJAT KA GHAR</h3>
+      <p class="product-price">80,91,000₹</p>
     </div>
   </div>
   <div class="pagination">
@@ -388,28 +557,28 @@ footer {
   <h2>Check Out Our Newest Collection</h2>
   <div class="collections">
     <div class="collection">
-      <h3>Collection</h3>
-      <p>Summer 2018</p>
-      <button class="collection-button">See More</button>
+      <h3>MUMBAI</h3>
+      <p>TOURIST PLACES FOR SALE</p>
+     <a href="https://www.google.com/search?q=mumbai+tourism&sca_esv=093f1932c1e44e67&udm=2&biw=1440&bih=813&sxsrf=ADLYWIKDd5M9-eyBjL1kuJx5PkTEWDTxFw%3A1719298380085&ei=TGl6ZrftBM-Yvr0PucWYgAI&oq=mumbai+tou&gs_lp=Egxnd3Mtd2l6LXNlcnAiCm11bWJhaSB0b3UqAggBMgsQABiABBixAxiDATIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjxL1CbCFjWJnABeACQAQCYAccCoAGXDqoBBzAuOC4xLjG4AQHIAQD4AQGYAgugAssOqAIKwgIHECMYJxjqAsICBBAjGCfCAggQABiABBixA8ICChAAGIAEGEMYigXCAg0QABiABBixAxhDGIoFwgIOEAAYgAQYsQMYgwEYigWYAwmSBwcxLjguMS4xoAe1Og&sclient=gws-wiz-serp"><button class="collection-button">See More</button></a>
     </div>
     <div class="collection">
-      <h3>Collection</h3>
-      <p>Summer 2018</p>
-      <button class="collection-button">See More</button>
+      <h3>DHELI</h3>
+      <p>TOURIST PLACES FOR SALE</p>
+    <a href="https://www.google.com/search?q=delhi+tourism&sca_esv=093f1932c1e44e67&udm=2&biw=1440&bih=813&sxsrf=ADLYWII-xgbK_Wg4P-q2oRVgXRhslC2f9g%3A1719299267125&ei=w2x6ZoutB7WXvr0P35-v0Ag&oq=deltourism&gs_lp=Egxnd3Mtd2l6LXNlcnAiCmRlbHRvdXJpc20qAggAMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB5IzRlQvQZYjwhwAXgAkAEAmAG-AaABkQSqAQMwLjO4AQHIAQD4AQGYAgKgAsoBwgIKEAAYgAQYQxiKBcICBRAAGIAEwgIGEAAYCBgemAMAiAYBkgcDMS4xoAfRDw&sclient=gws-wiz-serp"><button class="collection-button">See More</button></a> 
     </div>
     <div class="collection">
-      <h3>Collection</h3>
-      <p>Summer 2018</p>
-      <button class="collection-button">See More</button>
+      <h3>BHIND</h3>
+      <p>TOURIST PLACES FOR SALE</p>
+     <a href="https://www.google.com/search?q=amity+gwalior&sca_esv=093f1932c1e44e67&udm=2&biw=1440&bih=813&sxsrf=ADLYWIKPV5lVYgXrWzzvDKXiTeuK1YYMHw%3A1719299368513&ei=KG16Zs3_HsKyvr0P5petiAc&oq=amity+gw&gs_lp=Egxnd3Mtd2l6LXNlcnAiCGFtaXR5IGd3KgIIADIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYCBgeMgYQABgIGB4yBhAAGAgYHjIGEAAYCBgeSJ9JUKcEWLs_cAJ4AJABApgB2AGgAckbqgEGMC4xNi40uAEByAEA-AEBmAILoALzDagCCsICChAAGIAEGEMYigXCAgQQIxgnwgILEAAYgAQYsQMYgwHCAgcQIxgnGOoCwgIIEAAYgAQYsQPCAhAQABiABBixAxhDGIMBGIoFwgINEAAYgAQYsQMYQxiKBZgDBIgGAZIHBTIuNC41oAf3hQE&sclient=gws-wiz-serp"><button class="collection-button">See More</button></a>
     </div>
     <div class="collection">
-      <h3>Collection</h3>
-      <p>Summer 2018</p>
-      <button class="collection-button">See More</button>
+      <h3>DABRA</h3>
+      <p>TOURIST PLACES FOR SALE</p>
+     <a href="https://www.google.com/search?q=amity+gwalior&sca_esv=093f1932c1e44e67&udm=2&biw=1440&bih=813&sxsrf=ADLYWIKPV5lVYgXrWzzvDKXiTeuK1YYMHw%3A1719299368513&ei=KG16Zs3_HsKyvr0P5petiAc&oq=amity+gw&gs_lp=Egxnd3Mtd2l6LXNlcnAiCGFtaXR5IGd3KgIIADIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYCBgeMgYQABgIGB4yBhAAGAgYHjIGEAAYCBgeSJ9JUKcEWLs_cAJ4AJABApgB2AGgAckbqgEGMC4xNi40uAEByAEA-AEBmAILoALzDagCCsICChAAGIAEGEMYigXCAgQQIxgnwgILEAAYgAQYsQMYgwHCAgcQIxgnGOoCwgIIEAAYgAQYsQPCAhAQABiABBixAxhDGIMBGIoFwgINEAAYgAQYsQMYQxiKBZgDBIgGAZIHBTIuNC41oAf3hQE&sclient=gws-wiz-serp"><button class="collection-button">See More</button></a>
     </div>
   </div>
 </section>
-
+<br>
 <section class="deals-section">
   <h2>Get Latest Deals</h2>
   <div class="deals-form">
